@@ -23,6 +23,7 @@
 		DAA6CBD72549A77C00E8CF15 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6CBD62549A77C00E8CF15 /* Binding-OnChange.swift */; };
 		DAD1C761254C6469006BD494 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD1C760254C6469006BD494 /* ProjectHeaderView.swift */; };
 		DAD1C764254C687C006BD494 /* Colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD1C763254C687C006BD494 /* Colours.xcassets */; };
+		DAD1C768254C6A5F006BD494 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD1C767254C6A5F006BD494 /* EditProjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		DAA6CBD62549A77C00E8CF15 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 		DAD1C760254C6469006BD494 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		DAD1C763254C687C006BD494 /* Colours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colours.xcassets; sourceTree = "<group>"; };
+		DAD1C767254C6A5F006BD494 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				DAA6CBD025499F8A00E8CF15 /* EditItemView.swift */,
 				DA28FCD325430C8600E7AABB /* HomeView.swift */,
 				DAD1C760254C6469006BD494 /* ProjectHeaderView.swift */,
+				DAD1C767254C6A5F006BD494 /* EditProjectView.swift */,
 				DA28FCD725430EA700E7AABB /* ProjectsView.swift */,
 				DAA6CBD62549A77C00E8CF15 /* Binding-OnChange.swift */,
 				DAA6CBD32549A4E500E8CF15 /* ItemRowView.swift */,
@@ -190,6 +193,7 @@
 				DAD1C761254C6469006BD494 /* ProjectHeaderView.swift in Sources */,
 				DA28FCC82542EE7300E7AABB /* Main.xcdatamodeld in Sources */,
 				DAA6CBCE2548432900E8CF15 /* Project-CoreDataHelpers.swift in Sources */,
+				DAD1C768254C6A5F006BD494 /* EditProjectView.swift in Sources */,
 				DA28FCCB2542FD0600E7AABB /* DataController.swift in Sources */,
 				DAA6CBD42549A4E500E8CF15 /* ItemRowView.swift in Sources */,
 				DA28FCB92542ED7F00E7AABB /* ContentView.swift in Sources */,
