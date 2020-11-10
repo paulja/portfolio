@@ -42,7 +42,7 @@ struct ProjectsView: View {
                                     ItemRowView(project: project, item: item)
                                 }
                                 .onDelete { offsets in
-                                    let allItems = project.projectItems
+                                    let allItems = project.projectItems(using: sortDescriptor)
                                     for offset in offsets {
                                         let item = allItems[offset]
                                         dataController.delete(item)
