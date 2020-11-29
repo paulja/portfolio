@@ -18,12 +18,12 @@
 		DA28FCD825430EA700E7AABB /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA28FCD725430EA700E7AABB /* ProjectsView.swift */; };
 		DA46E820255F011B00535164 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA46E81F255F011B00535164 /* Bundle-Decodable.swift */; };
 		DA46E823255F044700535164 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA46E822255F044700535164 /* Award.swift */; };
-		DA46E826255F04C400535164 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = DA46E825255F04C400535164 /* Awards.json */; };
 		DA46E829255F054100535164 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA46E828255F054100535164 /* AwardsView.swift */; };
 		DA58D6E82555BB6000F691B9 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58D6E72555BB6000F691B9 /* Sequence-Sorting.swift */; };
 		DA629390256D3C7B0096ACF4 /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA62938F256D3C7B0096ACF4 /* Color-Additions.swift */; };
-		DA96BE132573B9230058D2A2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA96BE122573B9230058D2A2 /* Localizable.strings */; };
-		DA96BE172573BC280058D2A2 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = DA96BE162573BC280058D2A2 /* Localizable.stringsdict */; };
+		DA96BE192573C4BC0058D2A2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA96BE1B2573C4BC0058D2A2 /* Localizable.strings */; };
+		DA96BE1E2573C53A0058D2A2 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = DA96BE202573C53A0058D2A2 /* Localizable.stringsdict */; };
+		DA96BE232573C5F00058D2A2 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = DA96BE252573C5F00058D2A2 /* Awards.json */; };
 		DAA6CBCB2548419A00E8CF15 /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6CBCA2548419A00E8CF15 /* Item-CoreDataHelpers.swift */; };
 		DAA6CBCE2548432900E8CF15 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6CBCD2548432900E8CF15 /* Project-CoreDataHelpers.swift */; };
 		DAA6CBD125499F8A00E8CF15 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6CBD025499F8A00E8CF15 /* EditItemView.swift */; };
@@ -50,12 +50,15 @@
 		DA28FCD725430EA700E7AABB /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		DA46E81F255F011B00535164 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		DA46E822255F044700535164 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
-		DA46E825255F04C400535164 /* Awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
 		DA46E828255F054100535164 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 		DA58D6E72555BB6000F691B9 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 		DA62938F256D3C7B0096ACF4 /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
-		DA96BE122573B9230058D2A2 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		DA96BE162573BC280058D2A2 /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
+		DA96BE1A2573C4BC0058D2A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA96BE1D2573C4E30058D2A2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA96BE1F2573C53A0058D2A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		DA96BE212573C53F0058D2A2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = fr; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		DA96BE242573C5F00058D2A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/Awards.json; sourceTree = "<group>"; };
+		DA96BE262573C5F50058D2A2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = fr; path = fr.lproj/Awards.json; sourceTree = "<group>"; };
 		DAA6CBCA2548419A00E8CF15 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		DAA6CBCD2548432900E8CF15 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		DAA6CBD025499F8A00E8CF15 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
@@ -99,8 +102,8 @@
 		DA28FCB52542ED7F00E7AABB /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
-				DA96BE122573B9230058D2A2 /* Localizable.strings */,
-				DA96BE162573BC280058D2A2 /* Localizable.stringsdict */,
+				DA96BE1B2573C4BC0058D2A2 /* Localizable.strings */,
+				DA96BE202573C53A0058D2A2 /* Localizable.stringsdict */,
 				DA28FCCD2543029B00E7AABB /* Portfolio.entitlements */,
 				DA28FCC62542EE7300E7AABB /* Main.xcdatamodeld */,
 				DA28FCB62542ED7F00E7AABB /* PortfolioApp.swift */,
@@ -124,7 +127,7 @@
 				DA28FCBA2542ED8000E7AABB /* Assets.xcassets */,
 				DAD1C763254C687C006BD494 /* Colours.xcassets */,
 				DA28FCBF2542ED8000E7AABB /* Info.plist */,
-				DA46E825255F04C400535164 /* Awards.json */,
+				DA96BE252573C5F00058D2A2 /* Awards.json */,
 				DA28FCBC2542ED8000E7AABB /* Preview Content */,
 			);
 			path = Portfolio;
@@ -187,6 +190,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = DA28FCAA2542ED7F00E7AABB;
 			productRefGroup = DA28FCB42542ED7F00E7AABB /* Products */;
@@ -203,12 +207,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA96BE132573B9230058D2A2 /* Localizable.strings in Resources */,
+				DA96BE192573C4BC0058D2A2 /* Localizable.strings in Resources */,
 				DA28FCBE2542ED8000E7AABB /* Preview Assets.xcassets in Resources */,
-				DA46E826255F04C400535164 /* Awards.json in Resources */,
+				DA96BE232573C5F00058D2A2 /* Awards.json in Resources */,
 				DAD1C764254C687C006BD494 /* Colours.xcassets in Resources */,
 				DA28FCBB2542ED8000E7AABB /* Assets.xcassets in Resources */,
-				DA96BE172573BC280058D2A2 /* Localizable.stringsdict in Resources */,
+				DA96BE1E2573C53A0058D2A2 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +246,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA96BE1B2573C4BC0058D2A2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA96BE1A2573C4BC0058D2A2 /* en */,
+				DA96BE1D2573C4E30058D2A2 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DA96BE202573C53A0058D2A2 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA96BE1F2573C53A0058D2A2 /* en */,
+				DA96BE212573C53F0058D2A2 /* fr */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
+		DA96BE252573C5F00058D2A2 /* Awards.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA96BE242573C5F00058D2A2 /* en */,
+				DA96BE262573C5F50058D2A2 /* fr */,
+			);
+			name = Awards.json;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DA28FCC02542ED8000E7AABB /* Debug */ = {
