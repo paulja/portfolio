@@ -21,6 +21,7 @@
 		DA46E826255F04C400535164 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = DA46E825255F04C400535164 /* Awards.json */; };
 		DA46E829255F054100535164 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA46E828255F054100535164 /* AwardsView.swift */; };
 		DA58D6E82555BB6000F691B9 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58D6E72555BB6000F691B9 /* Sequence-Sorting.swift */; };
+		DA629390256D3C7B0096ACF4 /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA62938F256D3C7B0096ACF4 /* Color-Additions.swift */; };
 		DAA6CBCB2548419A00E8CF15 /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6CBCA2548419A00E8CF15 /* Item-CoreDataHelpers.swift */; };
 		DAA6CBCE2548432900E8CF15 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6CBCD2548432900E8CF15 /* Project-CoreDataHelpers.swift */; };
 		DAA6CBD125499F8A00E8CF15 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6CBD025499F8A00E8CF15 /* EditItemView.swift */; };
@@ -50,6 +51,7 @@
 		DA46E825255F04C400535164 /* Awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
 		DA46E828255F054100535164 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 		DA58D6E72555BB6000F691B9 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
+		DA62938F256D3C7B0096ACF4 /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 		DAA6CBCA2548419A00E8CF15 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		DAA6CBCD2548432900E8CF15 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		DAA6CBD025499F8A00E8CF15 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				DA28FCCA2542FD0600E7AABB /* DataController.swift */,
 				DAA6CBD62549A77C00E8CF15 /* Binding-OnChange.swift */,
 				DA46E81F255F011B00535164 /* Bundle-Decodable.swift */,
+				DA62938F256D3C7B0096ACF4 /* Color-Additions.swift */,
 				DA58D6E72555BB6000F691B9 /* Sequence-Sorting.swift */,
 				DAA6CBCD2548432900E8CF15 /* Project-CoreDataHelpers.swift */,
 				DAA6CBCA2548419A00E8CF15 /* Item-CoreDataHelpers.swift */,
@@ -213,6 +216,7 @@
 				DA46E829255F054100535164 /* AwardsView.swift in Sources */,
 				DA28FCC82542EE7300E7AABB /* Main.xcdatamodeld in Sources */,
 				DADFC3BE255AE72200795A57 /* SelectSomethingView.swift in Sources */,
+				DA629390256D3C7B0096ACF4 /* Color-Additions.swift in Sources */,
 				DAA6CBCE2548432900E8CF15 /* Project-CoreDataHelpers.swift in Sources */,
 				DAD1C768254C6A5F006BD494 /* EditProjectView.swift in Sources */,
 				DA28FCCB2542FD0600E7AABB /* DataController.swift in Sources */,
