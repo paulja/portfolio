@@ -1,87 +1,87 @@
 [
     {
-        "name": "First Steps",
-        "description": "Add your first item.",
+        "name": "Premiers pas",
+        "description": "Ajoutez votre premier article.",
         "color": "Light Blue",
         "criterion": "items",
         "value": 1,
         "image": "figure.walk"
     },
     {
-        "name": "A Great Start",
-        "description": "Add 10 item.",
+        "name": "Un bon début",
+        "description": "Ajoutez 10 éléments.",
         "color": "Light Blue",
         "criterion": "items",
         "value": 10,
         "image": "hand.thumbsup.fill"
     },
     {
-        "name": "Moving On Up",
-        "description": "Add 20 items.",
+        "name": "Monte socialement",
+        "description": "Ajoutez 20 éléments.",
         "color": "Light Blue",
         "criterion": "items",
         "value": 20,
         "image": "tray.and.arrow.up.fill"
     },
     {
-        "name": "Gathering Speed",
-        "description": "Add 50 items.",
+        "name": "Vitesse de collecte",
+        "description": "Ajoutez 50 articles.",
         "color": "Light Blue",
         "criterion": "items",
         "value": 50,
         "image": "speedometer"
     },
     {
-        "name": "Making Waves",
-        "description": "Add 100 items.",
+        "name": "Faire des vagues",
+        "description": "Ajoutez 100 articles.",
         "color": "Light Blue",
         "criterion": "items",
         "value": 100,
         "image": "dot.radiowaves.left.and.right"
     },
     {
-        "name": "High Performer",
-        "description": "Add 250 items.",
+        "name": "Performant",
+        "description": "Ajoutez 250 articles.",
         "color": "Light Blue",
         "criterion": "items",
         "value": 250,
         "image": "square.stack.3d.up.fill"
     },
     {
-        "name": "Star Performer",
-        "description": "Add 500 items.",
+        "name": "Artiste vedette",
+        "description": "Ajoutez 500 articles.",
         "color": "Light Blue",
         "criterion": "items",
         "value": 500,
         "image": "star.circle.fill"
     },
     {
-        "name": "Champion Performer",
-        "description": "Add 1000 items.",
+        "name": "Champion interprète",
+        "description": "Ajoutez 1000 articles.",
         "color": "Light Blue",
         "criterion": "items",
         "value": 1000,
         "image": "crown.fill"
     },
     {
-        "name": "Checking Boxes",
-        "description": "Complete your first item.",
+        "name": "Case à cocher",
+        "description": "Complétez votre premier élément.",
         "color": "Orange",
         "criterion": "complete",
         "value": 1,
         "image": "checkmark.shield.fill"
     },
     {
-        "name": "Rocking it",
-        "description": "Complete 10 items.",
+        "name": "Le balancer",
+        "description": "Complétez 10 éléments.",
         "color": "Orange",
         "criterion": "complete",
         "value": 10,
         "image": "guitars.fill"
     },
     {
-        "name": "20 is Plenty",
-        "description": "Complete 20 items.",
+        "name": "20 c'est beaucoup",
+        "description": "Complétez 10 éléments.",
         "color": "Orange",
         "criterion": "complete",
         "value": 20,
@@ -89,31 +89,31 @@
     },
     {
         "name": "Bullseye!",
-        "description": "Complete 50 items.",
+        "description": "Complétez 50 éléments.",
         "color": "Orange",
         "criterion": "complete",
         "value": 50,
         "image": "target"
     },
     {
-        "name": "Flying High",
-        "description": "Complete 100 items.",
+        "name": "Voler haut",
+        "description": "Complétez 100 éléments..",
         "color": "Orange",
         "criterion": "complete",
         "value": 100,
         "image": "airplane.circle.fill"
     },
     {
-        "name": "You're On Fire!",
-        "description": "Complete 250 items.",
+        "name": "Tu es en feu!",
+        "description": "Complétez 250 éléments.",
         "color": "Orange",
         "criterion": "complete",
         "value": 250,
         "image": "flame.fill"
     },
     {
-        "name": "Box Ticker in Chief",
-        "description": "Complete 500 items.",
+        "name": "Case Ticker en chef",
+        "description": "Complétez 500 éléments.",
         "color": "Orange",
         "criterion": "complete",
         "value": 500,
@@ -121,31 +121,31 @@
     },
     {
         "name": "Boom!",
-        "description": "Complete 1000 items.",
+        "description": "Complétez 500 éléments.",
         "color": "Orange",
         "criterion": "complete",
         "value": 1000,
         "image": "bolt.circle.fill"
     },
     {
-        "name": "First Message",
-        "description": "You posted your first message to the group chat.",
+        "name": "premier message",
+        "description": "Vous avez publié votre premier message dans le chat de groupe.",
         "color": "Purple",
         "criterion": "chat",
         "value": 1,
         "image": "person.fill"
     },
     {
-        "name": "Frequent Chatter",
-        "description": "You've posted 10 messages to the group chat.",
+        "name": "Chatter fréquent",
+        "description": "Vous avez publié 10 messages dans le chat de groupe.",
         "color": "Purple",
         "criterion": "chat",
         "value": 10,
         "image": "message.fill"
     },
     {
-        "name": "Community Powerhouse",
-        "description": "You've posted 100 messages to the group chat.",
+        "name": "Centrale communautaire",
+        "description": "Vous avez publié 100 messages dans le chat de groupe.",
         "color": "Purple",
         "criterion": "chat",
         "value": 100,
@@ -153,7 +153,7 @@
     },
     {
         "name": "Supporter",
-        "description": "You bought the premium unlock.",
+        "description": "Vous avez acheté le déverrouillage premium.",
         "color": "Green",
         "criterion": "unlock",
         "value": 0,
