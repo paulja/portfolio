@@ -5,7 +5,7 @@
 //  Created by Paul Jackson on 27/10/2020.
 //
 
-import Foundation
+import SwiftUI
 
 extension Project {
     static let colors = [
@@ -65,6 +65,11 @@ extension Project {
     
         let completedItems = originalItems.filter(\.completed)
         return Double(completedItems.count) / Double(originalItems.count)
+    }
+
+    var label: LocalizedStringKey {
+        LocalizedStringKey(
+            "\(projectTitle), \(projectItems.count) items, \(projectCompletion * 100, specifier: "%g")% complete.")
     }
 
     static var example: Project {
