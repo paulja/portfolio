@@ -26,9 +26,14 @@ struct HomeView: View {
     }
 
     init() {
+
+        let completedPredicate = NSPredicate(format: "completed = false")
+        let openPredicate = NSPredicate(format: "project.closed = false")
+        let compoundPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [completedPredicate, openPredicate])
+
         let request: NSFetchRequest<Item> = Item.fetchRequest()
         request.fetchLimit = 10
-        request.predicate = NSPredicate(format: "completed = false")
+        request.predicate = compoundPredicate
         request.sortDescriptors = [
             NSSortDescriptor(keyPath: \Item.priority, ascending: false)
         ]
