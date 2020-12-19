@@ -7,6 +7,8 @@
 
 import Foundation
 
+// swiftlint:disable line_length
+
 extension Bundle {
     func decode<T: Decodable>(
         _ type: T.Type,

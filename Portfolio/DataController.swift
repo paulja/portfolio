@@ -18,7 +18,7 @@ class DataController: ObservableObject {
             container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
         }
 
-        container.loadPersistentStores { storeDescription, error in
+        container.loadPersistentStores { _, error in
             if let error = error {
                 fatalError("Fatal error loading store: \(error.localizedDescription)")
             }
@@ -28,16 +28,16 @@ class DataController: ObservableObject {
     func createSampleData() throws {
         let viewContext = container.viewContext
 
-        for i in 1...5 {
+        for projectIndex in 1...5 {
             let project = Project(context: viewContext)
-            project.title = "Project \(i)"
+            project.title = "Project \(projectIndex)"
             project.items = []
             project.createdDate = Date()
             project.closed = Bool.random()
 
-            for j in 1...10 {
+            for itemIndex in 1...10 {
                 let item = Item(context: viewContext)
-                item.title = "Item \(j)"
+                item.title = "Item \(itemIndex)"
                 item.creationDate = Date()
                 item.completed = false
                 item.project = project
@@ -56,7 +56,7 @@ class DataController: ObservableObject {
 
         do {
             try dataController.createSampleData()
-        } catch  {
+        } catch {
             fatalError("Fatal error creating preview: \(error.localizedDescription)")
         }
 
@@ -101,7 +101,7 @@ class DataController: ObservableObject {
             return awardCount >= award.value
 
         default:
-            //fatalError("Unknown award criterion: \(award.criterion)")
+            // fatalError("Unknown award criterion: \(award.criterion)")
             return false
         }
     }
