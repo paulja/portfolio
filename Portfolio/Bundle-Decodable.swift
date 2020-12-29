@@ -10,11 +10,21 @@ import Foundation
 // swiftlint:disable line_length
 
 extension Bundle {
+    /// Generic function to decode an object `<T>` from a JSON file contained within the bundle.
+    ///
+    /// All errors result in a `fatalError` and crash the app.
+    /// 
+    /// - Parameters:
+    ///   - type: The type to decode in to.
+    ///   - file: The source JSON file.
+    ///   - dateDecodingStrategy: Override for the default date decoding strategy (`.deferredToDate`)
+    ///   - keyDecodingStrategy: Override for the default key decoding strategy (`.useDefaultKeys`)
+    /// - Returns: An instance of the typed object.
     func decode<T: Decodable>(
         _ type: T.Type,
         from file: String,
         dateDecodingStrategy: JSONDecoder.DateDecodingStrategy = .deferredToDate,
-        keyDecodingStratgy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys) -> T {
+        keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys) -> T {
 
         guard let url = self.url(forResource: file, withExtension: nil) else {
             fatalError("Failed to locate \(file) in bundle.")
@@ -26,7 +36,7 @@ extension Bundle {
 
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = dateDecodingStrategy
-        decoder.keyDecodingStrategy = keyDecodingStratgy
+        decoder.keyDecodingStrategy = keyDecodingStrategy
 
         do {
             return try decoder.decode(T.self, from: data)
@@ -40,5 +50,6 @@ extension Bundle {
             fatalError("Failed to decode \(file) from bundle because it appears to be invalid JSON")
         } catch {
             fatalError("Failed to decode \(file) from bundle: \(error.localizedDescription)")
-        }    }
+        }
+    }
 }

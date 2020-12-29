@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Models a single award instance and provides access to the award bundle data.
 struct Award: Decodable, Identifiable {
     var id: String { name }
     let name: String
@@ -16,6 +17,9 @@ struct Award: Decodable, Identifiable {
     let value: Int
     let image: String
 
+    /// Array of `Award` instances modelling the data in the "Awards.json" bundled file.
     static let allAwards = Bundle.main.decode([Award].self, from: "Awards.json")
+
+    /// An `Award` instance that can be used for previews, populated with some sample data.
     static let example = allAwards[0]
 }

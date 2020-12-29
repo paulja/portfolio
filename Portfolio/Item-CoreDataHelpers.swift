@@ -8,21 +8,14 @@
 import Foundation
 
 extension Item {
-    var itemTitle: String {
-        return title ?? NSLocalizedString("New Item", comment: "Create a new item")
-    }
 
-    var itemDetail: String {
-        return detail ?? ""
-    }
-
-    var itemCreationDate: Date {
-        creationDate ?? Date()
-    }
-
+    /// A `Item` instance that can be used for previews, populated with some sample data.
+    ///
+    /// No child data is generated, only some top-level properties such as `title`, `detail`, `priority`
+    /// and `createdDate`.
     static var example: Item {
-        let contoller = DataController(inMemory: true)
-        let viewContext = contoller.container.viewContext
+        let controller = DataController(inMemory: true)
+        let viewContext = controller.container.viewContext
 
         let item = Item(context: viewContext)
         item.title = "Example Item"
@@ -31,5 +24,20 @@ extension Item {
         item.creationDate = Date()
 
         return item
+    }
+
+    /// Title of the item as a String. Defaults to "New Item" (localised) if the model value is `nil`.
+    var itemTitle: String {
+        return title ?? NSLocalizedString("New Item", comment: "Create a new item")
+    }
+
+    /// Detail information for the item as a String. Defaults to an empty string if the model value is `nil`.
+    var itemDetail: String {
+        return detail ?? ""
+    }
+
+    /// Date the item was created. Defaults to the date the request was made if the model value is `nil`.
+    var itemCreationDate: Date {
+        creationDate ?? Date()
     }
 }
