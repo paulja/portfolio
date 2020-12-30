@@ -10,7 +10,6 @@ import SwiftUI
 @main
 /// App definition for the Portfolio App.
 struct PortfolioApp: App {
-
     /// Environmental data controller instance for the app.
     @StateObject var dataController: DataController
 
@@ -37,6 +36,7 @@ struct PortfolioApp: App {
     }
 
     /// Attempts to commit CoreData changes by using the environmental data controller.
+    /// 
     /// - Parameter notification: `Notification` instance that triggered the function. Argument unused.
     func save(_ notification: Notification) {
         dataController.save()

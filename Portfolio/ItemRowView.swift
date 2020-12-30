@@ -7,10 +7,17 @@
 
 import SwiftUI
 
+/// A view that models a single item row.
 struct ItemRowView: View {
+    /// Parent project for the item.
     @ObservedObject var project: Project
+
+    /// Item instance being presented.
     @ObservedObject var item: Item
 
+    /// An image view keyed from the state of the item.
+    ///
+    /// Renders different images based on whether the item is completed and it's priority.
     var icon: some View {
         if item.completed {
             return Image(systemName: "checkmark.circle")
@@ -24,6 +31,7 @@ struct ItemRowView: View {
         }
     }
 
+    /// A text view keyed from the state of the item.
     var label: Text {
         if item.completed {
             return Text("\(item.itemTitle), completed.")

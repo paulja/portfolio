@@ -8,7 +8,6 @@
 import SwiftUI
 
 extension Project {
-
     /// A `Project` instance that can be used for previews, populated with some sample data.
     ///
     /// No child data is generated, only some top-level properties such as `title`, `detail`, `closed`
@@ -27,7 +26,7 @@ extension Project {
     }
 
     /// Array of colour names used as available project colours.
-    static let colors = [
+    static let colours = [
         "Pink", "Purple", "Red", "Orange", "Gold",
         "Green", "Teal", "Light Blue", "Dark Blue",
         "Midnight", "Dark Gray", "Gray"

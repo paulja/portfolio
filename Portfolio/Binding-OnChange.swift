@@ -8,7 +8,6 @@
 import SwiftUI
 
 extension Binding {
-
     /// Calls a handler closure when a change in the wrapped value occurs.
     ///
     /// It is often useful to take action when a binding's wrapped value changes. This

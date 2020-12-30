@@ -8,26 +8,30 @@
 import SwiftUI
 import CoreData
 
+/// A view that represents the Home tab.
 struct HomeView: View {
+    /// String tag used to identify this view in the `TabView` used by the main `ContentView`.
     static let tag: String? = "Home"
 
+    /// Environmental data controller instance for the app.
     @EnvironmentObject var dataController: DataController
 
     @FetchRequest(
         entity: Project.entity(),
         sortDescriptors: [NSSortDescriptor(keyPath: \Project.title, ascending: true)],
         predicate: NSPredicate(format: "closed = false"))
-    var projects: FetchedResults<Project>
+    private var projects: FetchedResults<Project>
 
-    let items: FetchRequest<Item>
+    private let items: FetchRequest<Item>
 
-    var projectRows: [GridItem] {
+    private var projectRows: [GridItem] {
         [GridItem(.fixed(100))]
     }
 
+    /// Constructs a view and the request required to get the projects to interact with.
     init() {
         // Construct a fetch request to show the 10 highest-priority,
-        // incomplete items from open projects.
+        // incomplete items from all open projects.
         let completedPredicate = NSPredicate(format: "completed = false")
         let openPredicate = NSPredicate(format: "project.closed = false")
         let compoundPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [completedPredicate, openPredicate])

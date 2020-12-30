@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// List view of `Item`'s, including support for empty lists.
 struct ItemListView: View {
     let title: LocalizedStringKey
     let items: FetchedResults<Item>.SubSequence

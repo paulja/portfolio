@@ -11,7 +11,6 @@ import SwiftUI
 /// An environment singleton responsible for managing the CoreData stack, which includes saving,
 /// counting fetch requests, tracking awards, and deals with sample data.
 class DataController: ObservableObject {
-
     /// A CloudKit container used to store all app data.
     let container: NSPersistentCloudKitContainer
 

@@ -7,19 +7,27 @@
 
 import SwiftUI
 
+/// A view  that presents a collection of projects.
 struct ProjectsView: View {
+    /// String tags used to identify this view in the `TabView` used by the main `ContentView`.
     static let openTag: String? = "Open"
     static let closedTag: String? = "Closed"
 
+    /// Environmental data controller instance for the app.
     @EnvironmentObject var dataController: DataController
+
+    /// Environmental CoreData managed object context  instance for the app.
     @Environment(\.managedObjectContext) var managedObjectContext
 
     @State private var showingSortOrder = false
     @State private var sortDescriptor: NSSortDescriptor?
 
-    let showClosedProjects: Bool
-    let projects: FetchRequest<Project>
+    private let showClosedProjects: Bool
+    private let projects: FetchRequest<Project>
 
+    /// Creates an instance of the view for rendering a list of projects.
+    ///
+    /// - Parameter showClosedProjects: Boolean value to state whether to show close; otherwise open projects.
     init(showClosedProjects: Bool) {
         self.showClosedProjects = showClosedProjects
 
@@ -28,6 +36,7 @@ struct ProjectsView: View {
         ], predicate: NSPredicate(format: "closed = %d", showClosedProjects))
     }
 
+    /// A view that encapsulates the project list.
     var projectsList: some View {
         List {
             ForEach(projects.wrappedValue) { project in
@@ -52,6 +61,7 @@ struct ProjectsView: View {
         .listStyle(InsetGroupedListStyle())
     }
 
+    /// Toolbar content view for presenting the Add Project item.
     var addProjectToolbarItem: some ToolbarContent {
         ToolbarItem(placement: .navigationBarTrailing) {
             if showClosedProjects == false {
@@ -70,6 +80,7 @@ struct ProjectsView: View {
         }
     }
 
+    /// Toolbar content view for presenting the Sort item.
     var sortOrderToolbarItem: some ToolbarContent {
         ToolbarItem(placement: .navigationBarLeading) {
             Button {
@@ -117,6 +128,7 @@ struct ProjectsView: View {
         }
     }
 
+    /// Creates a new `Project` instance with default values, and commits to the backing store, with animation.
     func addProject() {
         withAnimation {
             let project = Project(context: managedObjectContext)
@@ -126,6 +138,10 @@ struct ProjectsView: View {
         }
     }
 
+    /// Creates a new `item` instance with default values, with a parent `Project`, commits to the backing
+    /// store, with animation.
+    ///
+    /// - Parameter project: Parent `Project` instance to associate `Item` with.
     func addItem(to project: Project) {
         withAnimation {
             let item = Item(context: managedObjectContext)
@@ -135,6 +151,13 @@ struct ProjectsView: View {
         }
     }
 
+    /// Removes the `Item`'s at the offsets from a `Project`.
+    ///
+    /// After all items have been removed from the offset locations, the result is committed to the backing store.
+    ///
+    /// - Parameters:
+    ///   - offsets: indexes  into the list of project items.
+    ///   - project: parent project to remove the items from.
     func delete(_ offsets: IndexSet, from project: Project) {
         let allItems = project.projectItems(using: sortDescriptor)
         for offset in offsets {

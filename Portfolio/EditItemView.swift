@@ -7,9 +7,11 @@
 
 import SwiftUI
 
+/// A view that enables management of an `Item`.
 struct EditItemView: View {
-    let item: Item
+    private let item: Item
 
+    /// An environmental data controller object instance for CoreData interaction.
     @EnvironmentObject var dataController: DataController
 
     @State private var title: String
@@ -17,6 +19,9 @@ struct EditItemView: View {
     @State private var priority: Int
     @State private var completed: Bool
 
+    /// Constructs a view by using an `Item` instance.
+    ///
+    /// - Parameter item: `Item` instance modelling the item to be edited.
     init(item: Item) {
         self.item = item
 
@@ -50,6 +55,11 @@ struct EditItemView: View {
         .onDisappear(perform: dataController.save)
     }
 
+    /// Updates the `Item` instance with the State object values.
+    ///
+    /// Before updating the model object this function signals that the parent `Project` instance is about
+    /// to change. The purpose of doing this is to ensure that any upstream views refresh themselves with
+    /// the new data.
     func update() {
         item.project?.objectWillChange.send()
 
@@ -57,7 +67,6 @@ struct EditItemView: View {
         item.detail = detail
         item.priority = Int16(priority)
         item.completed = completed
-
     }
 }
 

@@ -7,14 +7,18 @@
 
 import SwiftUI
 
+/// A view for presenting and interacting with `Award`s.
 struct AwardsView: View {
+    /// String tag used to identify this view in the `TabView` used by the main `ContentView`.
     static let tag: String? = "Awards"
 
+    /// Environmental data controller instance for the app.
     @EnvironmentObject var dataController: DataController
+
     @State private var selectedAward = Award.example
     @State private var showingAwardDetails = false
 
-    var columns: [GridItem] {
+    private var columns: [GridItem] {
         [GridItem(.adaptive(minimum: 100, maximum: 100))]
     }
 

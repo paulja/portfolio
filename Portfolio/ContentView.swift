@@ -7,7 +7,13 @@
 
 import SwiftUI
 
+/// The main content view for the app.
+///
+/// This root view is a `TabView` that is responsible for owning all the child views that make up the raw
+/// user interface. The active tab is remembered between sessions by using scene storage based on
+/// the `tag` value for each tab `View`.
 struct ContentView: View {
+    /// Used to store the selected tab / view between sessions in scene storage.
     @SceneStorage("selectedView") var selectedView: String?
 
     var body: some View {

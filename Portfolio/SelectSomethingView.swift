@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A view to present when there are no projects yet in the backing store.
 struct SelectSomethingView: View {
     var body: some View {
         Text("Please select something from the menu to begin.")

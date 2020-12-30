@@ -8,7 +8,6 @@
 import Foundation
 
 extension Item {
-
     /// A `Item` instance that can be used for previews, populated with some sample data.
     ///
     /// No child data is generated, only some top-level properties such as `title`, `detail`, `priority`
