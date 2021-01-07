@@ -10,7 +10,6 @@
 		DA28FCB72542ED7F00E7AABB /* PortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA28FCB62542ED7F00E7AABB /* PortfolioApp.swift */; };
 		DA28FCB92542ED7F00E7AABB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA28FCB82542ED7F00E7AABB /* ContentView.swift */; };
 		DA28FCBB2542ED8000E7AABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA28FCBA2542ED8000E7AABB /* Assets.xcassets */; };
-		DA28FCBE2542ED8000E7AABB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA28FCBD2542ED8000E7AABB /* Preview Assets.xcassets */; };
 		DA28FCC82542EE7300E7AABB /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA28FCC62542EE7300E7AABB /* Main.xcdatamodeld */; };
 		DA28FCCB2542FD0600E7AABB /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA28FCCA2542FD0600E7AABB /* DataController.swift */; };
 		DA28FCD1254302CE00E7AABB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA28FCD0254302CE00E7AABB /* CloudKit.framework */; };
@@ -42,7 +41,6 @@
 		DA28FCB62542ED7F00E7AABB /* PortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioApp.swift; sourceTree = "<group>"; };
 		DA28FCB82542ED7F00E7AABB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA28FCBA2542ED8000E7AABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DA28FCBD2542ED8000E7AABB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA28FCBF2542ED8000E7AABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA28FCC72542EE7300E7AABB /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		DA28FCCA2542FD0600E7AABB /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -106,45 +104,17 @@
 		DA28FCB52542ED7F00E7AABB /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
-				DA28FCCD2543029B00E7AABB /* Portfolio.entitlements */,
-				DA28FCBF2542ED8000E7AABB /* Info.plist */,
-				DA46E822255F044700535164 /* Award.swift */,
-				DA46E828255F054100535164 /* AwardsView.swift */,
-				DAA6CBD62549A77C00E8CF15 /* Binding-OnChange.swift */,
-				DA46E81F255F011B00535164 /* Bundle-Decodable.swift */,
-				DA62938F256D3C7B0096ACF4 /* Color-Additions.swift */,
-				DA28FCB82542ED7F00E7AABB /* ContentView.swift */,
-				DA28FCCA2542FD0600E7AABB /* DataController.swift */,
-				DAA6CBD025499F8A00E8CF15 /* EditItemView.swift */,
-				DAD1C767254C6A5F006BD494 /* EditProjectView.swift */,
-				DA28FCD325430C8600E7AABB /* HomeView.swift */,
-				DAA6CBCA2548419A00E8CF15 /* Item-CoreDataHelpers.swift */,
-				DA56E118257CFBAB00EF0899 /* ItemListView.swift */,
-				DAA6CBD32549A4E500E8CF15 /* ItemRowView.swift */,
+				DA8F301125A703DF002D40B9 /* Activities */,
+				DA8F301325A703F2002D40B9 /* Extensions */,
+				DA8F301425A703FA002D40B9 /* Localization */,
+				DA8F301225A703E7002D40B9 /* Core */,
 				DA28FCB62542ED7F00E7AABB /* PortfolioApp.swift */,
-				DAA6CBCD2548432900E8CF15 /* Project-CoreDataHelpers.swift */,
-				DAD1C760254C6469006BD494 /* ProjectHeaderView.swift */,
-				DA56E11B257CFCC400EF0899 /* ProjectSummaryView.swift */,
-				DA28FCD725430EA700E7AABB /* ProjectsView.swift */,
-				DADFC3BD255AE72200795A57 /* SelectSomethingView.swift */,
-				DA58D6E72555BB6000F691B9 /* Sequence-Sorting.swift */,
+				DA28FCCA2542FD0600E7AABB /* DataController.swift */,
+				DA28FCB82542ED7F00E7AABB /* ContentView.swift */,
 				DA28FCBA2542ED8000E7AABB /* Assets.xcassets */,
 				DAD1C763254C687C006BD494 /* Colours.xcassets */,
-				DA96BE252573C5F00058D2A2 /* Awards.json */,
-				DA96BE1B2573C4BC0058D2A2 /* Localizable.strings */,
-				DA96BE202573C53A0058D2A2 /* Localizable.stringsdict */,
-				DA28FCC62542EE7300E7AABB /* Main.xcdatamodeld */,
-				DA28FCBC2542ED8000E7AABB /* Preview Content */,
 			);
 			path = Portfolio;
-			sourceTree = "<group>";
-		};
-		DA28FCBC2542ED8000E7AABB /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				DA28FCBD2542ED8000E7AABB /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		DA28FCCF254302CE00E7AABB /* Frameworks */ = {
@@ -153,6 +123,81 @@
 				DA28FCD0254302CE00E7AABB /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA8F301125A703DF002D40B9 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				DA8F301525A70426002D40B9 /* Home */,
+				DA8F301625A7042C002D40B9 /* Projects */,
+				DA8F301725A70433002D40B9 /* Awards */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		DA8F301225A703E7002D40B9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DA28FCCD2543029B00E7AABB /* Portfolio.entitlements */,
+				DA28FCBF2542ED8000E7AABB /* Info.plist */,
+				DA28FCC62542EE7300E7AABB /* Main.xcdatamodeld */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DA8F301325A703F2002D40B9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DAA6CBD62549A77C00E8CF15 /* Binding-OnChange.swift */,
+				DA46E81F255F011B00535164 /* Bundle-Decodable.swift */,
+				DA62938F256D3C7B0096ACF4 /* Color-Additions.swift */,
+				DA58D6E72555BB6000F691B9 /* Sequence-Sorting.swift */,
+				DAA6CBCA2548419A00E8CF15 /* Item-CoreDataHelpers.swift */,
+				DAA6CBCD2548432900E8CF15 /* Project-CoreDataHelpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DA8F301425A703FA002D40B9 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				DA96BE1B2573C4BC0058D2A2 /* Localizable.strings */,
+				DA96BE202573C53A0058D2A2 /* Localizable.stringsdict */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		DA8F301525A70426002D40B9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DA28FCD325430C8600E7AABB /* HomeView.swift */,
+				DA56E118257CFBAB00EF0899 /* ItemListView.swift */,
+				DA56E11B257CFCC400EF0899 /* ProjectSummaryView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DA8F301625A7042C002D40B9 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				DAA6CBD025499F8A00E8CF15 /* EditItemView.swift */,
+				DAA6CBD32549A4E500E8CF15 /* ItemRowView.swift */,
+				DAD1C767254C6A5F006BD494 /* EditProjectView.swift */,
+				DAD1C760254C6469006BD494 /* ProjectHeaderView.swift */,
+				DA28FCD725430EA700E7AABB /* ProjectsView.swift */,
+				DADFC3BD255AE72200795A57 /* SelectSomethingView.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		DA8F301725A70433002D40B9 /* Awards */ = {
+			isa = PBXGroup;
+			children = (
+				DA46E822255F044700535164 /* Award.swift */,
+				DA46E828255F054100535164 /* AwardsView.swift */,
+				DA96BE252573C5F00058D2A2 /* Awards.json */,
+			);
+			path = Awards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +260,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA96BE192573C4BC0058D2A2 /* Localizable.strings in Resources */,
-				DA28FCBE2542ED8000E7AABB /* Preview Assets.xcassets in Resources */,
 				DA96BE232573C5F00058D2A2 /* Awards.json in Resources */,
 				DAD1C764254C687C006BD494 /* Colours.xcassets in Resources */,
 				DA28FCBB2542ED8000E7AABB /* Assets.xcassets in Resources */,
@@ -430,12 +474,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Portfolio/Portfolio.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Portfolio/Core/Portfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Portfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = 7F42FDQ9R9;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Portfolio/Info.plist;
+				INFOPLIST_FILE = Portfolio/Core/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -453,12 +496,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Portfolio/Portfolio.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Portfolio/Core/Portfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Portfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = 7F42FDQ9R9;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Portfolio/Info.plist;
+				INFOPLIST_FILE = Portfolio/Core/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
