@@ -73,5 +73,6 @@ struct EditItemView: View {
 struct EditItemView_Previews: PreviewProvider {
     static var previews: some View {
         EditItemView(item: Item.example)
+            .environmentObject(DataController.preview)
     }
 }

@@ -138,5 +138,6 @@ struct EditProjectView: View {
 struct EditProjectView_Previews: PreviewProvider {
     static var previews: some View {
         EditProjectView(project: Project.example)
+            .environmentObject(DataController.preview)
     }
 }
