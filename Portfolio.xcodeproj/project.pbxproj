@@ -34,6 +34,7 @@
 		DAA6CBD125499F8A00E8CF15 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6CBD025499F8A00E8CF15 /* EditItemView.swift */; };
 		DAA6CBD42549A4E500E8CF15 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6CBD32549A4E500E8CF15 /* ItemRowView.swift */; };
 		DAA6CBD72549A77C00E8CF15 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6CBD62549A77C00E8CF15 /* Binding-OnChange.swift */; };
+		DAC1EA4B25BEBC4100538845 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1EA4A25BEBC4100538845 /* DevelopmentTests.swift */; };
 		DAD1C761254C6469006BD494 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD1C760254C6469006BD494 /* ProjectHeaderView.swift */; };
 		DAD1C764254C687C006BD494 /* Colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD1C763254C687C006BD494 /* Colours.xcassets */; };
 		DAD1C768254C6A5F006BD494 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD1C767254C6A5F006BD494 /* EditProjectView.swift */; };
@@ -86,6 +87,7 @@
 		DAA6CBD025499F8A00E8CF15 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		DAA6CBD32549A4E500E8CF15 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 		DAA6CBD62549A77C00E8CF15 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
+		DAC1EA4A25BEBC4100538845 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
 		DAD1C760254C6469006BD494 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		DAD1C763254C687C006BD494 /* Colours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colours.xcassets; sourceTree = "<group>"; };
 		DAD1C767254C6A5F006BD494 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				DA82B3E325B05FED00B75DA3 /* AssetTest.swift */,
 				DA48F69225B8297700851B4F /* AwardsTest.swift */,
 				DA48F68C25B8248300851B4F /* ProjectTests.swift */,
+				DAC1EA4A25BEBC4100538845 /* DevelopmentTests.swift */,
 				DA82B3DB25B05E1700B75DA3 /* Info.plist */,
 			);
 			path = PortfolioTests;
@@ -397,6 +400,7 @@
 				DA48F69325B8297700851B4F /* AwardsTest.swift in Sources */,
 				DA82B3DA25B05E1700B75DA3 /* PortfolioTests.swift in Sources */,
 				DA48F68D25B8248300851B4F /* ProjectTests.swift in Sources */,
+				DAC1EA4B25BEBC4100538845 /* DevelopmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

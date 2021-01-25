@@ -13,7 +13,7 @@ extension Project {
     /// No child data is generated, only some top-level properties such as `title`, `detail`, `closed`
     /// and `createdDate`.
     static var example: Project {
-        let controller = DataController(inMemory: true)
+        let controller = DataController.preview
         let viewContext = controller.container.viewContext
 
         let project = Project(context: viewContext)
