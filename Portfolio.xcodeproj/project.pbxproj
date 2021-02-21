@@ -41,11 +41,20 @@
 		DADFC3BE255AE72200795A57 /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADFC3BD255AE72200795A57 /* SelectSomethingView.swift */; };
 		DAFA718425E17FDD00BBF391 /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = DAFA718325E17FDD00BBF391 /* DecodableDictionary.json */; };
 		DAFA718A25E17FF800BBF391 /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = DAFA718925E17FF800BBF391 /* DecodableString.json */; };
+		DAFA718E25E1852E00BBF391 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA718D25E1852E00BBF391 /* PerformanceTests.swift */; };
+		DAFA719825E188CF00BBF391 /* PortfolioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA719725E188CF00BBF391 /* PortfolioUITests.swift */; };
 		DAFC487A25C9BE1300CF2824 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFC487925C9BE1300CF2824 /* ExtensionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		DA82B3DC25B05E1700B75DA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA28FCAB2542ED7F00E7AABB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA28FCB22542ED7F00E7AABB;
+			remoteInfo = Portfolio;
+		};
+		DAFA719A25E188CF00BBF391 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA28FCAB2542ED7F00E7AABB /* Project object */;
 			proxyType = 1;
@@ -97,6 +106,10 @@
 		DADFC3BD255AE72200795A57 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 		DAFA718325E17FDD00BBF391 /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
 		DAFA718925E17FF800BBF391 /* DecodableString.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableString.json; sourceTree = "<group>"; };
+		DAFA718D25E1852E00BBF391 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
+		DAFA719525E188CF00BBF391 /* PortfolioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PortfolioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFA719725E188CF00BBF391 /* PortfolioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioUITests.swift; sourceTree = "<group>"; };
+		DAFA719925E188CF00BBF391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAFC487925C9BE1300CF2824 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +129,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAFA719225E188CF00BBF391 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -124,6 +144,7 @@
 			children = (
 				DA28FCB52542ED7F00E7AABB /* Portfolio */,
 				DA82B3D825B05E1700B75DA3 /* PortfolioTests */,
+				DAFA719625E188CF00BBF391 /* PortfolioUITests */,
 				DA28FCB42542ED7F00E7AABB /* Products */,
 				DA28FCCF254302CE00E7AABB /* Frameworks */,
 			);
@@ -134,6 +155,7 @@
 			children = (
 				DA28FCB32542ED7F00E7AABB /* Portfolio.app */,
 				DA82B3D725B05E1700B75DA3 /* PortfolioTests.xctest */,
+				DAFA719525E188CF00BBF391 /* PortfolioUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,6 +194,7 @@
 				DAFC487925C9BE1300CF2824 /* ExtensionTests.swift */,
 				DA48F68C25B8248300851B4F /* ProjectTests.swift */,
 				DAC1EA4A25BEBC4100538845 /* DevelopmentTests.swift */,
+				DAFA718D25E1852E00BBF391 /* PerformanceTests.swift */,
 				DA82B3DB25B05E1700B75DA3 /* Info.plist */,
 			);
 			path = PortfolioTests;
@@ -261,6 +284,15 @@
 			path = Fixtured;
 			sourceTree = "<group>";
 		};
+		DAFA719625E188CF00BBF391 /* PortfolioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAFA719725E188CF00BBF391 /* PortfolioUITests.swift */,
+				DAFA719925E188CF00BBF391 /* Info.plist */,
+			);
+			path = PortfolioUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -300,13 +332,31 @@
 			productReference = DA82B3D725B05E1700B75DA3 /* PortfolioTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DAFA719425E188CF00BBF391 /* PortfolioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAFA719C25E188CF00BBF391 /* Build configuration list for PBXNativeTarget "PortfolioUITests" */;
+			buildPhases = (
+				DAFA719125E188CF00BBF391 /* Sources */,
+				DAFA719225E188CF00BBF391 /* Frameworks */,
+				DAFA719325E188CF00BBF391 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAFA719B25E188CF00BBF391 /* PBXTargetDependency */,
+			);
+			name = PortfolioUITests;
+			productName = PortfolioUITests;
+			productReference = DAFA719525E188CF00BBF391 /* PortfolioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		DA28FCAB2542ED7F00E7AABB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					DA28FCB22542ED7F00E7AABB = {
@@ -314,6 +364,10 @@
 					};
 					DA82B3D625B05E1700B75DA3 = {
 						CreatedOnToolsVersion = 12.3;
+						TestTargetID = DA28FCB22542ED7F00E7AABB;
+					};
+					DAFA719425E188CF00BBF391 = {
+						CreatedOnToolsVersion = 12.4;
 						TestTargetID = DA28FCB22542ED7F00E7AABB;
 					};
 				};
@@ -334,6 +388,7 @@
 			targets = (
 				DA28FCB22542ED7F00E7AABB /* Portfolio */,
 				DA82B3D625B05E1700B75DA3 /* PortfolioTests */,
+				DAFA719425E188CF00BBF391 /* PortfolioUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -357,6 +412,13 @@
 			files = (
 				DAFA718A25E17FF800BBF391 /* DecodableString.json in Resources */,
 				DAFA718425E17FDD00BBF391 /* DecodableDictionary.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFA719325E188CF00BBF391 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,12 +477,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAFA718E25E1852E00BBF391 /* PerformanceTests.swift in Sources */,
 				DA82B3E425B05FED00B75DA3 /* AssetTest.swift in Sources */,
 				DA48F69325B8297700851B4F /* AwardsTest.swift in Sources */,
 				DA82B3DA25B05E1700B75DA3 /* PortfolioTests.swift in Sources */,
 				DAFC487A25C9BE1300CF2824 /* ExtensionTests.swift in Sources */,
 				DA48F68D25B8248300851B4F /* ProjectTests.swift in Sources */,
 				DAC1EA4B25BEBC4100538845 /* DevelopmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFA719125E188CF00BBF391 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFA719825E188CF00BBF391 /* PortfolioUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +502,11 @@
 			isa = PBXTargetDependency;
 			target = DA28FCB22542ED7F00E7AABB /* Portfolio */;
 			targetProxy = DA82B3DC25B05E1700B75DA3 /* PBXContainerItemProxy */;
+		};
+		DAFA719B25E188CF00BBF391 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA28FCB22542ED7F00E7AABB /* Portfolio */;
+			targetProxy = DAFA719A25E188CF00BBF391 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -669,6 +745,46 @@
 			};
 			name = Release;
 		};
+		DAFA719D25E188CF00BBF391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SEBFRC3FBZ;
+				INFOPLIST_FILE = PortfolioUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.jaaco.PortfolioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Portfolio;
+			};
+			name = Debug;
+		};
+		DAFA719E25E188CF00BBF391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SEBFRC3FBZ;
+				INFOPLIST_FILE = PortfolioUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.jaaco.PortfolioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Portfolio;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -695,6 +811,15 @@
 			buildConfigurations = (
 				DA82B3DE25B05E1700B75DA3 /* Debug */,
 				DA82B3DF25B05E1700B75DA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAFA719C25E188CF00BBF391 /* Build configuration list for PBXNativeTarget "PortfolioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFA719D25E188CF00BBF391 /* Debug */,
+				DAFA719E25E188CF00BBF391 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
