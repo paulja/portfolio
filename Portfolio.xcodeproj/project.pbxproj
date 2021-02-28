@@ -24,6 +24,7 @@
 		DA56E11C257CFCC400EF0899 /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA56E11B257CFCC400EF0899 /* ProjectSummaryView.swift */; };
 		DA58D6E82555BB6000F691B9 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58D6E72555BB6000F691B9 /* Sequence-Sorting.swift */; };
 		DA629390256D3C7B0096ACF4 /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA62938F256D3C7B0096ACF4 /* Color-Additions.swift */; };
+		DA76E85925EBF8BB003DEEB0 /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA76E85825EBF8BB003DEEB0 /* ProjectsViewModel.swift */; };
 		DA82B3DA25B05E1700B75DA3 /* PortfolioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82B3D925B05E1700B75DA3 /* PortfolioTests.swift */; };
 		DA82B3E425B05FED00B75DA3 /* AssetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82B3E325B05FED00B75DA3 /* AssetTest.swift */; };
 		DA96BE192573C4BC0058D2A2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA96BE1B2573C4BC0058D2A2 /* Localizable.strings */; };
@@ -84,6 +85,7 @@
 		DA56E11B257CFCC400EF0899 /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
 		DA58D6E72555BB6000F691B9 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 		DA62938F256D3C7B0096ACF4 /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
+		DA76E85825EBF8BB003DEEB0 /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
 		DA82B3D725B05E1700B75DA3 /* PortfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PortfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA82B3D925B05E1700B75DA3 /* PortfolioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioTests.swift; sourceTree = "<group>"; };
 		DA82B3DB25B05E1700B75DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				DAD1C767254C6A5F006BD494 /* EditProjectView.swift */,
 				DAD1C760254C6469006BD494 /* ProjectHeaderView.swift */,
 				DA28FCD725430EA700E7AABB /* ProjectsView.swift */,
+				DA76E85825EBF8BB003DEEB0 /* ProjectsViewModel.swift */,
 				DADFC3BD255AE72200795A57 /* SelectSomethingView.swift */,
 			);
 			path = Projects;
@@ -469,6 +472,7 @@
 				DA28FCD425430C8600E7AABB /* HomeView.swift in Sources */,
 				DA28FCB72542ED7F00E7AABB /* PortfolioApp.swift in Sources */,
 				DAA6CBCB2548419A00E8CF15 /* Item-CoreDataHelpers.swift in Sources */,
+				DA76E85925EBF8BB003DEEB0 /* ProjectsViewModel.swift in Sources */,
 				DAA6CBD125499F8A00E8CF15 /* EditItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

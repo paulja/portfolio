@@ -16,6 +16,9 @@ struct ContentView: View {
     /// Used to store the selected tab / view between sessions in scene storage.
     @SceneStorage("selectedView") var selectedView: String?
 
+    /// Environmental data controller instance for the app.
+    @EnvironmentObject var dataController: DataController
+
     var body: some View {
         TabView(selection: $selectedView) {
             HomeView()
@@ -25,14 +28,14 @@ struct ContentView: View {
                     Text("Home")
                 }
 
-            ProjectsView(showClosedProjects: false)
+            ProjectsView(dataController: dataController, showClosedProjects: false)
                 .tag(ProjectsView.openTag)
                 .tabItem {
                     Image(systemName: "list.bullet")
                     Text("Open")
                 }
 
-            ProjectsView(showClosedProjects: true)
+            ProjectsView(dataController: dataController, showClosedProjects: true)
                 .tag(ProjectsView.closedTag)
                 .tabItem {
                     Image(systemName: "checkmark")
